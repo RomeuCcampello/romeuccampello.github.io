@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#121414">
+<link rel="canonical" href="https://romeuccampello.github.io/">
+<meta property="og:url" content="https://romeuccampello.github.io/">
+<title>Romeu Campello — Software, IA e dados</title>
+<meta name="description" content="Desenvolvedor na Galva Energia e estudante na CESAR School. Conheça meu trabalho com IA aplicada, conferência de faturas e análise de dados de restaurantes.">
+<meta property="og:title" content="Romeu Campello — Software, IA e dados">
+<meta property="og:description" content="Do mercado de energia ao software. Projetos, decisões e demonstrações com dados fictícios.">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#conteudo">Pular para o conteúdo</a>
+<header class="nav shell"><a class="logo" href="#inicio" aria-label="Romeu Campello, início"><svg viewBox="0 0 88 60" fill="none" aria-hidden="true"><path d="M8 49V11h16c17 0 17 22 0 22H8m17 0 17 16" stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/><path d="M77 15c-18-13-35 0-35 15s17 28 35 15" stroke="currentColor" stroke-width="5" stroke-linecap="round"/><circle class="mark-accent" cx="78" cy="9" r="4"/></svg></a><nav aria-label="Principal"><a href="#projetos">Projetos</a><a href="#sobre">Sobre</a><a href="#contato">Contato <span aria-hidden="true">↗</span></a></nav></header>
+<main id="conteudo">
+<section class="hero shell" id="inicio" aria-labelledby="nome">
+  <div class="hero-top"><span>Software, IA & dados</span><span>Recife, Brasil <span class="dot" aria-hidden="true"></span></span></div>
+  <figure class="hero-photo"><img src="romeu.png" width="859" height="853" fetchpriority="high" alt="Romeu de terno azul em uma foto de família."><figcaption>Romeu Campello · Recife, PE</figcaption></figure>
+  <h1 id="nome"><span class="first">Romeu</span><span class="last">Campello<span class="name-dot">.</span></span></h1>
+  <span class="asterisk hero-star" aria-hidden="true">✳</span>
+  <div class="hero-intro"><p>Conheço o mercado de energia.<br>Hoje, escrevo o software<br>que ajuda a operá-lo.</p><a class="text-link" href="#projetos">Conheça meu trabalho <span aria-hidden="true">↓</span></a></div>
+  <div class="hero-bottom"><span>Desenvolvimento na Galva Energia</span><span>Banco de Dados e IA · CESAR School</span></div>
+</section>
+
+<section class="work shell" id="projetos" aria-labelledby="trabalhos">
+<div class="section-heading"><h2 id="trabalhos">Trabalho em prática<span>.</span></h2><p>O problema, as decisões<br>e o que dá para experimentar.</p></div>
+<article class="case galva">
+  <div class="case-copy"><p class="eyebrow">Galva Energia · Desenvolvimento de software e IA</p><h3>IA aplicada à operação<br>e à venda de energia.</h3><p>Desenvolvi os sistemas de software da Galva Energia. A IA lê faturas e relatórios; as integrações conectam os dados aos fluxos de conferência, análise e venda.</p><p>Automatizei a captura de faturas com Python e Playwright. A extração estruturada alimenta a conferência dos valores e os documentos comerciais.</p><div class="case-tools">LLMs · Integração de APIs · Python · TypeScript · Supabase</div><a href="#exemplo" class="dark-link">Experimente uma conferência <span aria-hidden="true">↘</span></a></div>
+  <div class="invoice-wrap" id="exemplo"><div class="invoice">
+    <div class="invoice-top"><span>Conferência de energia</span><span aria-hidden="true">↗</span></div>
+    <p class="invoice-label">Exemplo com dados fictícios</p>
+    <label for="cenario">Cenário</label><select id="cenario"><option value="diferenca">Diferença na cobrança</option><option value="compativel">Cobrança compatível</option><option value="incompleto">Leitura incompleta</option></select>
+    <dl><div><dt>Consumo lido</dt><dd id="consumo">100 kWh</dd></div><div><dt>Tarifa de referência</dt><dd id="tarifa">R$ 0,80/kWh</dd></div><div><dt>Valor cobrado</dt><dd id="cobrado">R$ 86,00</dd></div></dl>
+    <div class="invoice-result" aria-live="polite"><span id="resultado-titulo">Revisão necessária</span><strong id="diferenca">R$ 6,00</strong><p id="calculo">100 × R$ 0,80 = R$ 80,00 esperados.</p></div>
+    <p class="invoice-foot">Esta demo começa com campos fictícios já extraídos. Confira a leitura e a tarifa antes de concluir a revisão.</p>
+  </div></div>
+  <div class="case-note">Demonstração independente, escrita para o portfólio. O cálculo ilustra uma linha de cobrança, sem impostos ou outras parcelas.</div>
+</article>
+
+<section class="galva-systems" aria-labelledby="fluxo-titulo">
+  <div class="systems-intro">
+    <div><p class="eyebrow">Integração entre os sistemas da Galva</p><h3 id="fluxo-titulo">Da fatura à proposta.<br>Da aprovação ao contrato.</h3></div>
+    <p>Os dados lidos na fatura alimentam a proposta comercial. Depois da aprovação, o sistema cria o contrato e faz o envio ao cliente. As informações seguem pelo processo sem precisar ser redigitadas em cada documento.</p>
+  </div>
+  <ol class="sales-flow">
+    <li><span>Fatura</span><p>Leitura e extração dos dados.</p></li>
+    <li><span>Proposta</span><p>Documento criado a partir da leitura.</p></li>
+    <li class="human-step"><span>Aprovação</span><p>Validação antes de seguir.</p></li>
+    <li><span>Contrato</span><p>Geração com os dados da proposta.</p></li>
+    <li><span>Cliente</span><p>Envio do contrato pelo sistema.</p></li>
+  </ol>
+  <div class="before-after" aria-label="Comparação do processo comercial">
+  <div><span>Antes · proposta</span><strong>Cerca de 1h</strong><p>Em alguns casos, preparar a planilha exigia interromper outra pessoa da empresa e devolver a proposta ao vendedor.</p></div>
+  <div><span>Antes · contrato</span><strong>Ao menos 12h</strong><p>Após o aceite, o envio do contrato dependia de uma nova passagem manual entre as pessoas.</p></div>
+  <div class="now"><span>Fluxo atual</span><strong>Geração automática</strong><p>A fatura preenche a proposta. A aprovação dá sequência à criação do contrato e ao envio pelo sistema.</p></div>
+</div>
+<div class="systems-details">
+    <section><h4>Dados que circulam</h4><p>Integrações por API conectam os sistemas internos e fontes do setor, incluindo a CCEE. As informações ficam disponíveis para os fluxos operacionais e comerciais.</p></section>
+    <section><h4>Análise da operação</h4><p>Assistentes de IA apoiam a análise de dados dos próprios sistemas. A leitura de faturas e relatórios ajuda a investigar consumo, demanda e diferenças de cobrança.</p></section>
+    <section><h4>Tempo e custo de processamento</h4><p>O preenchimento automático aproveita os dados da fatura na proposta e no contrato. Na extração, o cache reutiliza uma leitura válida do mesmo PDF e evita repetir a chamada ao modelo.</p></section>
+  </div>
+  <div class="models-row"><span>LLMs & ferramentas</span><p>Gemini na leitura de documentos. Claude, ChatGPT e Llama na construção e automação de sistemas.</p></div>
+</section>
+<section class="dashboard-gallery" aria-labelledby="painel-titulo">
+  <div class="gallery-heading"><div><p class="eyebrow">Interfaces que desenvolvi na Galva</p><h3 id="painel-titulo">Telemetria e geração solar.</h3></div><p>Consumo, demanda, comparação de faturas e acompanhamento da geração reunidos em painéis de operação. Cliente, unidade e indicadores foram ocultados nas imagens.</p></div>
+  <div class="gallery-grid">
+    <figure><button class="gallery-open" type="button" data-title="Consumo, demanda e comparação de faturas" aria-label="Ampliar painel de consumo, demanda e comparação de faturas"><img src="galeria/telemetria-1.png" width="2112" height="1188" loading="lazy" alt="Interface Galva com comparação de faturas, curvas de demanda e indicadores de consumo. Valores ocultados."><span>Ampliar painel <span aria-hidden="true">↗</span></span></button><figcaption><strong>Consumo e comparação de faturas</strong><span>Visão de demanda, fator de potência e participação das fontes de energia.</span></figcaption></figure>
+    <figure><button class="gallery-open" type="button" data-title="Geração solar e desempenho dos inversores" aria-label="Ampliar painel de geração solar e desempenho dos inversores"><img src="galeria/telemetria-2.png" width="2112" height="1188" loading="lazy" alt="Interface Galva com consumo versus geração, inversores, strings e perdas de geração. Valores ocultados."><span>Ampliar painel <span aria-hidden="true">↗</span></span></button><figcaption><strong>Geração e desempenho dos equipamentos</strong><span>Comparação entre geração medida e esperada, alertas e acompanhamento de perdas.</span></figcaption></figure>
+  </div>
+</section>
+<article class="case swfast">
+  <div class="swfast-preview" aria-label="Gráfico de cancelamentos em duas lojas fictícias"><div class="preview-header"><span>Swfast / análise operacional</span><span aria-hidden="true">↗</span></div><p class="question">Onde os cancelamentos<br>pioraram?</p><div class="chart-legend"><span><i></i>Semana 1</span><span><i></i>Semana 2</span></div><div class="chart"><div class="chart-unit"><div class="bars"><div class="bar old" style="--height:40%"><b>4%</b></div><div class="bar new" style="--height:100%"><b>10%</b></div></div><span>Mercado Norte</span></div><div class="chart-unit"><div class="bars"><div class="bar old" style="--height:20%"><b>2%</b></div><div class="bar new" style="--height:10%"><b>1%</b></div></div><span>Praça Sul</span></div></div><p class="chart-note">100 tentativas por loja em cada semana.<br>Dados inteiramente fictícios.</p></div>
+  <div class="case-copy"><p class="eyebrow">Swfast · Dados de restaurantes</p><h3>Análise de vendas<br>e cancelamentos.</h3><p>Assumi o projeto em sua fase inicial e concluí o dashboard de vendas e cancelamentos, integrando a API Swfast, PostgreSQL e Metabase.</p><p>Na extensão de portfólio, um classificador Naive Bayes identifica a métrica pedida em português. O Python calcula a resposta sobre duas lojas fictícias. Tudo roda offline.</p><div class="case-tools">Python · PostgreSQL · Metabase · Machine learning</div><a class="dark-link" href="https://github.com/RomeuCcampello/dashboard-swfast-portfolio/blob/main/demonstracao.ipynb" target="_blank" rel="noopener noreferrer">Veja perguntas, dados e respostas <span aria-hidden="true">↗</span></a><a class="source-link" href="https://github.com/RomeuCcampello/dashboard-swfast-portfolio" target="_blank" rel="noopener noreferrer">Código e crédito do projeto-base <span aria-hidden="true">↗</span></a></div>
+</article>
+</section>
+
+<section class="about shell" id="sobre" aria-labelledby="sobre-titulo"><div class="about-title"><p class="eyebrow">Um pouco sobre mim</p><h2 id="sobre-titulo">Mercado de energia,<br>software e dados.</h2><span class="asterisk about-star" aria-hidden="true">✳</span></div><div class="about-copy"><p>Já vendi energia solar como MEI. Esse contato com o mercado me ajuda a entender o que precisa ser resolvido antes de escolher a ferramenta.</p><p>Hoje, sou responsável pelo desenvolvimento dos projetos de software da Galva Energia e estudo Banco de Dados e IA na CESAR School, com conclusão prevista para o primeiro semestre de 2028.</p><p>Tenho interesse em machine learning, automação e nas decisões que fazem uma solução funcionar no dia a dia.</p><section class="academic-recognition" aria-labelledby="recognition-title">
+  <div class="recognition-meta"><span>Reconhecimento acadêmico</span><time datetime="2026-06">Junho de 2026</time></div>
+  <h3 id="recognition-title">Projeto selecionado para o CESAR Innovation</h3>
+  <p>Projeto do primeiro período sobre armazenamento de energia em baterias (BESS), aproveitando baterias de veículos elétricos. O protótipo explorou o uso de LLMs para estimar a saúde das células a partir da quilometragem e da data de fabricação.</p>
+</section>
+<p class="language-info"><span>Idioma</span><strong>Inglês intermediário</strong></p>
+<div class="about-foot"><span>Recife, PE</span><span>Formação prevista · 2028.1</span></div></div></section>
+
+<section class="contact shell" id="contato" aria-labelledby="contato-titulo"><h2 id="contato-titulo">Entre em contato<span>.</span></h2><a class="email" href="mailto:romeucampello006@gmail.com">romeucampello006@gmail.com <span aria-hidden="true">↗</span></a><div class="contact-links"><a href="Romeu-Campello-Curriculo.pdf" download>Baixar currículo <span aria-hidden="true">↓</span></a><a href="https://www.linkedin.com/in/romeu-campello-800a7934b/" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span></a><a href="https://github.com/RomeuCcampello" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a></div></section>
+</main>
+<footer class="shell"><a class="logo" href="#inicio" aria-label="Voltar ao início"><svg viewBox="0 0 88 60" fill="none" aria-hidden="true"><path d="M8 49V11h16c17 0 17 22 0 22H8m17 0 17 16" stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/><path d="M77 15c-18-13-35 0-35 15s17 28 35 15" stroke="currentColor" stroke-width="5" stroke-linecap="round"/><circle class="mark-accent" cx="78" cy="9" r="4"/></svg></a><p>Romeu Alves Carneiro Campello</p><a class="photo-credit" href="#inicio">Voltar ao início ↑</a></footer>
+<dialog class="gallery-modal" id="gallery-modal" aria-labelledby="gallery-title">
+  <div class="modal-bar"><h2 id="gallery-title">Painel Galva</h2><button class="modal-close" type="button" autofocus>Fechar</button></div>
+  <img id="gallery-image" width="2112" height="1188" alt="">
+  <div class="modal-footer"><p>Interface do sistema desenvolvido. Valores e identificadores ocultados.</p><a id="gallery-file" target="_blank" rel="noopener noreferrer">Abrir imagem em tamanho original ↗</a></div>
+</dialog>
+<script src="main.js"></script>
+</body></html>
